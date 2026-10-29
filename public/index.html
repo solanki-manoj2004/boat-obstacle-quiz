@@ -1,0 +1,105 @@
+<CodeBlock language="html" editable>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#061525">
+  <meta name="description" content="Take on the Boat Quest QR Challenge.">
+  <title>Boat Quest | QR Challenge</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="ocean-bg" aria-hidden="true">
+    <div class="glow glow-one"></div>
+    <div class="glow glow-two"></div>
+    <div class="wave wave-one"></div>
+    <div class="wave wave-two"></div>
+    <div class="wave wave-three"></div>
+  </div>
+
+<main class="quiz-container">
+    <header class="brand">
+      <div class="brand-icon" aria-hidden="true">⚓</div>
+      <div>
+        <p class="brand-name">BOAT QUEST</p>
+        <p class="brand-tagline">NAVIGATE YOUR CHALLENGE</p>
+      </div>
+      <span class="live-indicator"><span></span> LIVE</span>
+    </header>
+
+<div class="hero">
+      <p class="eyebrow"><span></span> THE ULTIMATE WATER CHALLENGE</p>
+      <h1>Boat <span>Obstacle</span><br>Course</h1>
+      <p class="subtitle">Scan. Solve. Conquer.</p>
+    </div>
+
+    <div class="divider"></div>
+
+<section id="loading" class="loading-panel" aria-live="polite">
+      <div class="loader" aria-hidden="true"></div>
+      <p id="status">Loading your checkpoint...</p>
+    </section>
+
+<section id="quiz" hidden>
+      <div class="quiz-meta">
+        <span id="checkpoint" class="checkpoint-pill"></span>
+        <span id="questionNumber" class="question-count"></span>
+      </div>
+
+<div class="question-card">
+        <div class="question-label">
+          <span class="question-dot"></span>
+          YOUR NEXT CHALLENGE
+        </div>
+        <h2 id="question"></h2>
+      </div>
+
+<div class="answers-heading">
+        <span>CHOOSE YOUR ANSWER</span>
+        <span class="select-hint">Tap one option</span>
+      </div>
+
+      <div id="options"></div>
+
+<div class="timer-area" id="timerArea">
+        <div class="timer-icon" aria-hidden="true">◷</div>
+        <div class="timer-copy">
+          <span>TIME REMAINING</span>
+          <small>Make your move!</small>
+        </div>
+        <strong id="timer" role="timer" aria-live="off">--</strong>
+      </div>
+
+<button id="submitBtn" class="primary-btn" disabled>
+        <span>SUBMIT ANSWER</span>
+        <span class="btn-arrow" aria-hidden="true">➜</span>
+      </button>
+
+<p class="bottom-note">⚡ Stay sharp. Every second counts.</p>
+    </section>
+
+<section id="result" class="result-panel" hidden aria-live="polite">
+      <div id="resultIcon" class="result-icon" aria-hidden="true">✦</div>
+      <p class="eyebrow result-eyebrow">CHALLENGE UPDATE</p>
+      <h2 id="resultTitle"></h2>
+      <p id="resultMessage"></p>
+      <button id="nextBtn" class="primary-btn" hidden>
+        <span>CONTINUE</span>
+        <span class="btn-arrow" aria-hidden="true">➜</span>
+      </button>
+    </section>
+
+<footer class="footer">
+      <span>BOAT QUEST</span>
+      <span class="footer-dot">◆</span>
+      <span>READY FOR THE WAVES?</span>
+    </footer>
+  </main>
+
+  <div id="confettiLayer" class="confetti-layer" aria-hidden="true"></div>
+
+<script src="/script.js"></script>
+</body>
+</html>
+</CodeBlock>
